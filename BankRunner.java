@@ -38,17 +38,16 @@ class Bank{
 
     public void withdraw(int amt){
         if (this.balance - amt > 0){
-        this.balance = this.balance - amt;
-        System.out.println(this.name + " has a new balance of " + this.balance);
-    }
-    else
-        System.out.println("Insufficient funds");
-    }
+            this.balance = this.balance - amt;
+            System.out.println(this.name + " has a new balance of " + this.balance);
+        }
+        else
+            System.out.println("Insufficient funds");
+        }
 
     // because the attributes are 'private'
     // you must use a method to 'get' the value
     public int getBalance(){
         return this.balance;
     }
-
-}
+} // close the Bank class
