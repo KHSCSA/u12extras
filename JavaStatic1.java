@@ -1,18 +1,27 @@
 public class JavaStatic1 {
     public static void main(String[] args){
-        mystery();
-        JavaStatic1.mystery();  // class name is optional
+        mystery1();
+        JavaStatic1.mystery1();  // class name is optional
 
-        String ans = mystery2(42);
+        String ans = mystery4(42);
         System.out.println(ans);
     }
 
-    public static void mystery(){
+    public static void mystery1(){
         System.out.println("stuff");
     }
 
-    public static String mystery2(int num){
-        return "You sent " + num;
+    public static String mystery2(){
+        return "I'm giving you back " + 42;
+    }
+
+
+    public static void mystery3(int num){
+        System.out.println("You sent " + num);
+    }
+
+    public static String mystery4(int num){
+        return "I'm giving you back " + num;
     }
 
 }

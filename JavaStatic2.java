@@ -1,18 +1,18 @@
 public class JavaStatic2 {
     public static void main(String[] args){
-        Stuff.mystery();  // class name is required
+        Stuff.mystery1();  // class name is required
 
-        String ans = Stuff.mystery2(42);
+        String ans = Stuff.mystery4(42);
         System.out.println(ans);
     }
 }
 
 class Stuff{
-    public static void mystery(){
+    public static void mystery1(){
         System.out.println("stuff");
     }
 
-    public static String mystery2(int num){
+    public static String mystery4(int num){
         return "You sent " + num;
     }
 }
