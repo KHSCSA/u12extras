@@ -18,6 +18,5 @@ class StringsRunner {
         System.out.println(s5);
 
         System.out.println("this is " + 13);
-
     }
 }
